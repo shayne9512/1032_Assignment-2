@@ -3,6 +3,27 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     Title="自製踩地雷" MinHeight="415" MinWidth="350" Height="415" Width="350" PreviewMouseDown="Window_PreviewMouseDown">
     <DockPanel>
+        <Menu Name="menu1" Height="25" DockPanel.Dock="Top">
+            <MenuItem Header="遊戲(_G)">
+                <MenuItem Click="MenuItem_Click_1" Header="初級(_B)：10x10,10地雷"/>
+                <MenuItem Click="MenuItem_Click_2" Header="中級(_I)：15x15,30地雷"/>
+                <MenuItem Click="MenuItem_Click_3" Header="高級(_A)：16x30,99地雷"/>
+                <Separator/>
+                <MenuItem Click="MenuItem_Close_Click" Header="離開(_X)"/>
+            </MenuItem>
+            <MenuItem Header="說明(_H)">
+                <MenuItem Click="MenuItem_About_Click" Header="關於(_A)"/>
+            </MenuItem>
+        </Menu>
+        <DockPanel Name="dockPanel1" Dock="Top">
+            <Label Name="lblCount" FontSize="14" Padding="20,0" VerticalAlignment="Center" Margin="10,0"
+             BorderThickness="1" BorderBrush="Black" MinHeight="40" VerticalContentAlignment="Center" Background="#FFE3E3E3">000</Label>
+            <Label Name="lblTimer" DockPanel.Dock="Right" FontSize="14" VerticalAlignment="Center" Padding="20,0"
+             Margin="10,0" BorderThickness="1" BorderBrush="Black" MinHeight="40"
+             VerticalContentAlignment="Center" Background="#FFE3E3E3">000</Label>
+            <Button Click="btnReset_Click" Name="btnReset" FontSize="14" Margin="10,0" Padding="5,0" MinHeight="40"
+              MaxWidth="150" Background="#FFDDDDDD">Reset</Button>
+        </DockPanel>
         <UniformGrid Name="ugdBoard" Background="AliceBlue" />
     </DockPanel>
 </Window>

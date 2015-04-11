@@ -8,7 +8,7 @@ using System.Windows;
 // 變更這些屬性的值即可修改組件的相關
 // 資訊。
 [assembly: AssemblyTitle("myMines")]
-[assembly: AssemblyDescription("")]
+[assembly: AssemblyDescription("101703005 資科三 魏子翔")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("Microsoft")]
 [assembly: AssemblyProduct("myMines")]
